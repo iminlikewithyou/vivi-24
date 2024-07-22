@@ -2,8 +2,9 @@
 /** Represents possible tags for a word. */
 type Tag = string;
 /** Represents a part of speech. */
-type PartOfSpeech = "noun" | "verb" | "adjective" | "adverb" | "pronoun" | "preposition" | "conjunction" | "interjection";
+type PartOfSpeech = "noun" | "verb" | "adjective" | "adverb" | "pronoun" | "preposition" | "conjunction" | "interjection" | "abbreviation" | "determiner" | "abbreviation" | "symbol" | "prefix" | "suffix";
 
+// TODO: There's probably a better name for this.
 /** Represents a word form label. */
 type WordFormLabel =
   "noun" | "plural noun" |
@@ -49,9 +50,9 @@ interface Entry extends Attributable {
 type Subdefinition = string;
 
 /** Represents a word form. */
-interface WordForm {
+interface WordForm<T = PartOfSpeech> {
   /** The part of speech of this word form. */
-  partOfSpeech: PartOfSpeech;
+  partOfSpeech: T;
   /** The form of the word. */
   form: string;
 }
@@ -84,7 +85,7 @@ interface Definition extends Attributable {
    * ]
    * ```
    */
-  forms: WordForm[];
+  forms: WordForm<WordFormLabel>[];
   /**
    * The definition.
    * This supports links to other words or entries.
