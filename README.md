@@ -37,3 +37,9 @@ also see [this Discord message](https://discord.com/channels/916735613808545872/
 ### Tracking data points from other Vivi dictionaries
 
 see [this Discord message](https://discord.com/channels/916735613808545872/1061082708643692544/1186984004516315207)
+
+### Helpful grouping for lexicographers
+
+see [this Discord message](https://discord.com/channels/916735613808545872/1061082708643692544/1187626284889681961), although I'm unsure what this ultimately means. words can be from dependencies but not actually in the dictionary data for a specific dictionary? it seems good for the fact that vivi/english can depend on csw/csw but exclude words it doesn't want to use?
+
+does this grouping show on the dictionary page? the page when merging? or what? idk
