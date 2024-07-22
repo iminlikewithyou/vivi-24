@@ -11,7 +11,8 @@ type WordFormLabel =
   "verb" | "past tense" | "past participle" | "gerund or present participle" | "3rd person present" |
   "adjective" | "comparative adjective" | "superlative adjective" |
   "adverb" | "comparative adverb" | "superlative adverb" |
-  "pronoun" | "preposition" | "conjunction" | "interjection" |
+  "pronoun" | "possesive pronoun" |
+  "preposition" | "conjunction" | "interjection" |
   "determiner" | "abbreviation" | "symbol" | "prefix" | "suffix";
 
 /**
